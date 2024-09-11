@@ -14,7 +14,7 @@ const Proof_ops = () => {
   const fetchRepos = async () => {
     // const res = await fetch('https://api.github.com/users')
     const res = await fetch('https://api.github.com/repos/loonwerks/AGREE-Toy-Example/actions/runs', {method:'GET', 
-      headers: {'Authorization': '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'}});
+    });
     const data = await res.json()
     const result = Object.keys(data).map((key) => data[key]);
     setItems(result)
@@ -22,9 +22,6 @@ const Proof_ops = () => {
 
     // axios
     //     .get("https://api.github.com/repos/loonwerks/AGREE-Toy-Example/actions/workflows", {
-    //       headers: {
-    //         Authorization: "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",
-    //       },
     //     })
     //     .then((response) => {
     //       setItems(response.data);
@@ -42,40 +39,6 @@ const Proof_ops = () => {
     fetchRepos();
   }, []);
 
-    // (() => {
-    //   axios
-    //     .get("https://api.github.com/repos/loonwerks/AGREE-Toy-Example/actions/runs", {
-    //       headers: {
-    //         Authorization: "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",
-    //       },
-    //     })
-    //     .then((response) => {
-    //       setItems(response.data);
-    //     })
-    //     .catch((error) => {
-    //       alert("error fetching data:" + error);
-    //     });
-    // })();
-
-    // const fetchRepos = async () => {
-    //   const octokit = new Octokit({
-    //     auth: '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'
-    //   })
-
-    //   const res = await octokit.request('GET /repos/{owner}/{repo}/actions/runs', {
-    //     owner: 'loonwerks',
-    //     repo: 'AGREE-Toy-Example',
-    //     headers: {
-    //       'X-GitHub-Api-Version': '2022-11-28'
-    //     }
-    //   })
-    //   // JSON.stringify(res)
-    //   // const d = await  JSON.stringify(res)
-    //   // setItems(d)
-    //   // st = res.status
-    // }
-    // fetchRepos()
-  // }, [])
 
   return (
     <div className= "proof_ops">
