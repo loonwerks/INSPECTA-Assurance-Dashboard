@@ -16,7 +16,7 @@ const Proof_ops = () => {
     const res = await fetch('https://api.github.com/repos/loonwerks/AGREE-Toy-Example/actions/runs', {method:'GET', 
     });
     const data = await res.json()
-    const result = Object.keys(data).map((key) => data[key]);
+    const result = Object.keys(data).map((k) => data[k]);
     setItems(result)
     console.log("Hello:" + typeof(items))
 
@@ -42,7 +42,7 @@ const Proof_ops = () => {
 
   return (
     <div className= "proof_ops">
-      {items[1].map((item: any) => (
+      {items[1]?.map((item: any) => (
         <div className="item" key={item.id}>
           <span className="item_run_num">{item.run_number}</span>
           <span className="item_id">{item.id}</span> 
