@@ -1,4 +1,9 @@
 .proof_ops{
+    .box1{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
     .item{
         display: flex;
         justify-content: space-between;
