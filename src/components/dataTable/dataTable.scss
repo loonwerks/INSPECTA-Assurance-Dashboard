@@ -1,11 +1,27 @@
 .dataTable{
+    display: flex;
+    padding: 5px;
     .dataGrid{
         background: white;
         padding: 20px;
         width: 99%;
+        justify-content: center;
+        display: flex;
 
         .MuiDataGrid-toolbarContainer{
             flex-direction: row-reverse;
+        }
+
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 100%;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            
         }
     }
 }

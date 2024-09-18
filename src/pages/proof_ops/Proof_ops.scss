@@ -1,11 +1,26 @@
 .proof_ops{
+    span{
+        padding: 10px;
+        font-size: x-large;
+        font-weight: 800;
+        font-style: italic;
+    }
+    h1{
+        // display: flex;
+        padding: 5px;
+        font-size: x-large;
+    }
     .box1{
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        padding: 10px;
     }
-    .item{
-        display: flex;
-        justify-content: space-between;
+    .box2{
+        // display: flex;
+        padding: 10px;
     }
+    // .item{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
 }
