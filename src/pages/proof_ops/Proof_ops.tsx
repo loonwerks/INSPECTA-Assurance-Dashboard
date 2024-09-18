@@ -5,11 +5,23 @@ import DataTable from "../../components/dataTable/DataTable"
 import { GridColDef } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
-  { field: 'avatar', headerName: 'Avatar', width: 100, renderCell: (params) => {
+  { 
+    field: 'avatar', 
+    headerName: 'Avatar', 
+    width: 100,
+    align: "center", 
+    renderCell: (params) => {
     return <img src={params.row.img || "/noavatar.png"} alt="" />;
-  }},
-  { field: 'id', headerName: 'ID' },
-  { field: 'runNum', headerName: 'Run Number' },
+    }
+  },
+  { 
+    field: 'id', 
+    headerName: 'ID' 
+  },
+  { 
+    field: 'runNum', 
+    headerName: 'Run Number' 
+  },
   {
     field: 'itemName',
     headerName: 'Name',
