@@ -3,6 +3,8 @@ import "./Proof_ops.scss"
 import SimpleBox from "../../components/simpleBox/SimpleBox"
 import DataTable from "../../components/dataTable/DataTable"
 import { GridColDef } from "@mui/x-data-grid";
+import { Value } from "sass";
+import { keys } from "@mui/system";
 
 const columns: GridColDef[] = [
   { 
@@ -68,9 +70,10 @@ const columns: GridColDef[] = [
 ];
 
 const Proof_ops = () => {
-  const [items, setItems] = useState<any[]>([])
-  const [owner] = useState("loonwerks")
-  const [repo] = useState("AGREE-Toy-Example")
+  const owner: string = "loonwerks";
+  const repo: string = "AGREE-Toy-Example";
+  let url: string = 'https://api.github.com/repos/' + owner + '/' + repo + '/actions/runs';
+  // const [items, setItems] = useState<any[]>([])
   const [dataRows, setDataRows] = useState<any[]>([])
   const [totalWorkflowRuns, setWorkflowRuns] = useState(0)
   const [totalCompetedRuns, setCompetedRuns] = useState(0)
@@ -83,15 +86,14 @@ const Proof_ops = () => {
   // useEffect(() => {
   const fetchRepos = async () => {
     // const res = await fetch('https://api.github.com/users')
-    const res = await fetch('https://api.github.com/repos/loonwerks/AGREE-Toy-Example/actions/runs', {method:'GET', 
-    });
+    const res = await fetch(url, {method:'GET'})
     const data = await res.json()
     const result = Object.keys(data).map((k) => data[k]);
-    setItems(result)
+    // setItems(result)
     setWorkflowRuns(result[0])
     console.log(totalWorkflowRuns)
     for (let i = 0; i < result[1].length; i++){
-      let tempRow = {};
+      let tempRow: any = {};
       tempRow["avatar" as keyof Object] = result[1][i].actor.avatar_url;
       tempRow["id" as keyof Object] = result[1][i].id;
       tempRow["runNum" as keyof Object] = result[1][i].run_number;
@@ -101,16 +103,16 @@ const Proof_ops = () => {
       tempRow["itemCreatedAt" as keyof Object] = result[1][i].created_at;
       tempRow["itemActor" as keyof Object] = result[1][i].actor.login;
       tempRow["itemRepo" as keyof Object] = result[1][i].head_repository.name;
-      // if (result[1][i].conclusion === "success") {
-      //   tempRow["status" as keyof Object] = true;
-      // } else {
-      //   tempRow["status" as keyof Object] = false;
-      // }
-      if (result[1][i].conclusion === 'failure'){
+      if (result[1][i].conclusion === "success") {
+        tempRow["status" as keyof Object] = true;
+      } else {
+        tempRow["status" as keyof Object] = false;
+      }
+      if (result[1][i].conclusion === "failure"){
         failedRuns ++;
-      } else if (result[1][i].conclusion === 'success'){
+      } else if (result[1][i].conclusion === "success"){
         competedRuns ++;
-      } else if (result[1][i].conclusion === 'cancelled'){
+      } else if (result[1][i].conclusion === "cancelled"){
         cancelledRuns ++;
       }
       rows.push(tempRow)
