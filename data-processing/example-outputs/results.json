@@ -1,0 +1,37 @@
+{
+    "results": [],
+    "date": "Fri Jul 11 10:13:38 CDT 2025",
+    "project": "C:\\Users\\shasan1\\osate2-2.12.0\\workspace\\isolate-ethernet-simple",
+    "component": "platform::ZCU102.Impl",
+    "status": "Analysis Completed",
+    "syntaxValidation": {
+        "warnings": 4,
+        "errors": 0,
+        "issues": [
+            {
+                "severity": "warning",
+                "issue": "HAMR in \u0027with\u0027 clause of public package section is not used.",
+                "file": "/isolate-ethernet-simple/case_modeling_guidelines.aadl",
+                "line": 4
+            },
+            {
+                "severity": "warning",
+                "issue": "CASE_Properties in \u0027with\u0027 clause of public package section is not used.",
+                "file": "/isolate-ethernet-simple/case_modeling_guidelines.aadl",
+                "line": 5
+            },
+            {
+                "severity": "warning",
+                "issue": "CASE_Scheduling in \u0027with\u0027 clause of public package section is not used.",
+                "file": "/isolate-ethernet-simple/case_modeling_guidelines.aadl",
+                "line": 6
+            },
+            {
+                "severity": "warning",
+                "issue": "INSPECTA_Modeling_Guidelines in \u0027with\u0027 clause of public package section is not used.",
+                "file": "/isolate-ethernet-simple/platform.aadl",
+                "line": 7
+            }
+        ]
+    }
+}

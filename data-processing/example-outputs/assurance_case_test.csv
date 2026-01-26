@@ -1,0 +1,53 @@
+ID,Parent ID ,Name,Status
+1,NULL,sysCyberResilient: The system {sys} is acceptably cyber-resilient,TRUE
+2,1,secReqsSatisfied: Argument over security requirements,TRUE
+3,2,reqsCorrectComplete: Security requirements {secReqs} are correct and complete with respect to vulnerabilities found in the {sys} architecture model,TRUE
+4,2,reqSatisfied: Security requirement {secReq} is satisfied,TRUE
+5,4,reqSatisfiedInModel: Security requirement {secReq} is satisfied in the {sys} model,TRUE
+6,4,reqSatisfiedInImpl: Security requirement {secReq} is satisfied in the realization of the {sys} model,TRUE
+7,3,reqsReviewed: Security requirements {secReqs} were reviewed,TRUE
+8,3,reqsImportedOmitted: Security requirements {seqReqs} were imported into model or omitted with rationale,TRUE
+9,3,noNewVulnerabilities: Security analysis performed on {sys} model finds no new vulnerabilities,TRUE
+10,7,reviewResult: Requirement review result,TRUE
+11,8,importResult: Requirement import and omissin log,TRUE
+12,9,wellFormedModel: security analysis was performed on well-formed {sys} model that complies with modeling guidelines,TRUE
+13,9,modelAnalyzed: Security analysis was performed on most recent version of the {sys} model,TRUE
+14,9,noNewReqs: Security analysis produces no new applicable requirements,TRUE
+15,12,lintResult: Results from Resolint tool,TRUE
+16,13,modResult: Compare model modification time with analysis log,TRUE
+17,14,newReqResult: No new reqs in analysis log,TRUE
+18,5,filterAdded: A filter {flt} is properly added to {targetComp},TRUE
+19,5,formalVerification: Formal verification that {sys} model satisfies requirement {reqFilter},TRUE
+20,18,filterExists: Filter {flt} exists on {targetComp} in {sys} model,TRUE
+21,18,notBypassed: Filter {flt} cannot be bypassed in {sys} model,TRUE
+22,20,exists: Verified by Resolute,TRUE
+23,21,notBypassed: Verified by Resolute,TRUE
+24,19,reqFormat: Requirement {seqReq} is stated in terms of component interfaces and publicly disclosed local state,TRUE
+25,19,verifPassed: Formal verification is run on current version of {sys} model and passes,TRUE
+26,19,verifReview: Formal verification results were reviewed,TRUE
+27,24,contractsExist: Filter {flt} and {targetComp} have contracts specified,TRUE
+28,24,validFormalSpec: The formally specified behavior is validated to align with the requirements intent,TRUE
+29,27,contractSpec: Verified by Resolute,TRUE
+30,28,validSpec: Verified by Review,TRUE
+31,25,agreeCheck: Verified by Resolute,TRUE
+32,26,agreeReview: AGREE review result,TRUE
+33,6,deployedSWComp: Deployed software component {mitComp} satisfies requirement {secReq},TRUE
+34,6,sysImplSatReq: Implementation of the {sys} model satisfies requirement {seqReq},TRUE
+35,33,interfaceConformance: Component {mitComp} application code conforms to its declared AADL interface and requirements,TRUE
+36,33,aadlSemantics: The component {mitComp} AADL runtime infrastructure code satisfies AADL port and theading semantics,TRUE
+37,33,platformDeployment: The platform deployment context of the component {mitComp} achieves its required assurance properties,TRUE
+38,35,portAPIs: Component {mitComp} application source code receives/sends its external inputs and outputs exclusively through APIs corresponding to the component's interface ports,TRUE
+39,35,"runToCompletion: Upon dispatch, component {mitComp} application code runs to completion and computes a function of its input ports and local state to its output ports and local state",TRUE
+40,35,"inflowSpec: On every dispatch, the function computed by component {mitComp} satisfies the intra-component information flow specifications",TRUE
+41,38,correctToolAPIs: Tool-generated component APIs are correctly derived from AADL component,TRUE
+42,38,cordeUsesAPIs: Application code uses tool-generated component APIs for port communication ,TRUE
+43,38,externalPathways: Application code libraries do not have communication pathways or state outside of component boundaries,TRUE
+44,35,"dispatchAction: On every dispatch, the component {mitComp} implementation either produces an output satisfying the component contract or drops the input value",TRUE
+45,35,"wcet: On every dispatch, the execution time of the application code conforms to its specified worst-case execution time",TRUE
+46,41,trace: manual inspection/traceability information,TRUE
+47,42,compilation: Manual inspection/comilation/static analysis results,TRUE
+48,43,libAssessment: Manual assessment of libraries,TRUE
+49,39,testing: Test results/Review of formal semantics of programming language,TRUE
+50,44,formalTest: Test/formal verification results,TRUE
+51,40,inspection: Inspection/Formal verification results\,TRUE
+52,45,testing: Test results,TRUE

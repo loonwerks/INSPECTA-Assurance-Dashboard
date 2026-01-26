@@ -1,0 +1,92 @@
+{
+    "verification_results": {
+        "encountered_error": false,
+        "encountered_vir_error": false,
+        "success": true,
+        "verified": 3,
+        "errors": 0,
+        "is_verifying_entire_crate": true
+    },
+    "times_ms": {
+        "verus_build": {
+            "profile": "release",
+            "version": "0.2025.03.31.f811fb9.dirty"
+        },
+        "num_threads": 1,
+        "total": 425,
+        "estimated_cpu_time": 425,
+        "rust": {
+            "total": 135,
+            "init_and_types": 71,
+            "lifetime": 50,
+            "compile": 13
+        },
+        "verification": {
+            "total": 284,
+            "vir": {
+                "total": 147,
+                "hir": 43,
+                "import": 32,
+                "rust_to_vir": 43
+            }
+        },
+        "total_verify": 131,
+        "total_verify_module_times": [
+            {
+                "module": "",
+                "time": 131
+            }
+        ],
+        "air": {
+            "total": 56,
+            "module_times": [
+                {
+                    "module": "",
+                    "time": 56
+                }
+            ]
+        },
+        "smt": {
+            "total": 54,
+            "smt_init": 17,
+            "smt_init_module_times": [
+                {
+                    "module": "",
+                    "time": 17
+                }
+            ],
+            "smt_run": 37,
+            "smt_run_module_times": [
+                {
+                    "module": "",
+                    "time": 37,
+                    "rlimit_count": 383066,
+                    "function_breakdown": [
+                        {
+                            "function": "human_eval_008::sum_bound",
+                            "time": 2,
+                            "rlimit_count": 6785,
+                            "success": true
+                        },
+                        {
+                            "function": "human_eval_008::sum_product",
+                            "time": 35,
+                            "rlimit_count": 376281,
+                            "success": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "verus": {
+        "profile": "release",
+        "version": "0.2025.03.31.f811fb9.dirty",
+        "platform": {
+            "os": "macos",
+            "arch": "aarch64"
+        },
+        "toolchain": "1.82.0_aarch64_apple_darwin",
+        "commit": "f811fb928471b8abffcfdc07511d7ea0ef7d3217"
+    }
+}

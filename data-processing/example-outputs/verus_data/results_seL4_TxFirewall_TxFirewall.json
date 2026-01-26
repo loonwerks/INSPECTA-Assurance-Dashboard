@@ -1,0 +1,195 @@
+{
+  "verification-results": {
+    "encountered-error": false,
+    "encountered-vir-error": false,
+    "success": true,
+    "verified": 16,
+    "errors": 0,
+    "is-verifying-entire-crate": true
+  },
+  "times-ms": {
+    "verus-build": {
+      "profile": "release",
+      "version": "0.2025.06.14.9b557d7"
+    },
+    "num-threads": 2,
+    "total": 1045,
+    "estimated-cpu-time": 1117,
+    "rust": {
+      "total": 275,
+      "init-and-types": 54,
+      "lifetime": 52,
+      "compile": 168
+    },
+    "verification": {
+      "total": 758,
+      "vir": {
+        "total": 188,
+        "hir": 23,
+        "import": 80,
+        "rust-to-vir": 17
+      }
+    },
+    "total-verify": 632,
+    "total-verify-module-times": [
+      {
+        "module": "component::seL4_TxFirewall_TxFirewall_app",
+        "time": 545
+      },
+      {
+        "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+        "time": 87
+      }
+    ],
+    "air": {
+      "total": 93,
+      "module-times": [
+        {
+          "module": "component::seL4_TxFirewall_TxFirewall_app",
+          "time": 54
+        },
+        {
+          "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+          "time": 38
+        }
+      ]
+    },
+    "smt": {
+      "total": 468,
+      "smt-init": 29,
+      "smt-init-module-times": [
+        {
+          "module": "component::seL4_TxFirewall_TxFirewall_app",
+          "time": 16
+        },
+        {
+          "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+          "time": 12
+        }
+      ],
+      "smt-run": 439,
+      "smt-run-module-times": [
+        {
+          "module": "component::seL4_TxFirewall_TxFirewall_app",
+          "time": 430,
+          "rlimit-count": 1105342,
+          "function-breakdown": [
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::initialize",
+              "time": 0,
+              "rlimit-count": 580472,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::new",
+              "time": 0,
+              "rlimit-count": 104178,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::get_frame_packet",
+              "time": 240,
+              "rlimit-count": 81,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::timeTriggered",
+              "time": 185,
+              "rlimit-count": 529,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::notify",
+              "time": 0,
+              "rlimit-count": 410611,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::can_send_packet",
+              "time": 3,
+              "rlimit-count": 9471,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+          "time": 9,
+          "rlimit-count": 79082,
+          "function-breakdown": [
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::compute_api",
+              "time": 0,
+              "rlimit-count": 163,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut1",
+              "time": 1,
+              "rlimit-count": 43241,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut0",
+              "time": 1,
+              "rlimit-count": 3679,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn0",
+              "time": 0,
+              "rlimit-count": 5672,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn1",
+              "time": 0,
+              "rlimit-count": 3796,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::init_api",
+              "time": 0,
+              "rlimit-count": 3618,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn2",
+              "time": 0,
+              "rlimit-count": 3696,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn3",
+              "time": 0,
+              "rlimit-count": 3688,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut3",
+              "time": 1,
+              "rlimit-count": 5692,
+              "success": true
+            },
+            {
+              "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut2",
+              "time": 1,
+              "rlimit-count": 5837,
+              "success": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "verus": {
+    "profile": "release",
+    "version": "0.2025.06.14.9b557d7",
+    "platform": {
+      "os": "linux",
+      "arch": "x86_64"
+    },
+    "toolchain": "1.85.1-x86_64-unknown-linux-gnu",
+    "commit": "9b557d70faab565829c0642c4d56609a44814d82"
+  }
+}

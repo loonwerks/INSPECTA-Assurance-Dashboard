@@ -1,0 +1,53 @@
+{
+	"header": {
+		"cloc_url": "github.com/AlDanial/cloc",
+		"cloc_version": "1.86",
+		"elapsed_seconds": 0.0744950771331787,
+		"n_files": 71,
+		"n_lines": 7726,
+		"files_per_second": 953.083112768239,
+		"lines_per_second": 103711.551116161
+	},
+	"Rust": {
+		"nFiles": 34,
+		"blank": 514,
+		"comment": 477,
+		"code": 3499
+	},
+	"C": {
+		"nFiles": 17,
+		"blank": 348,
+		"comment": 276,
+		"code": 1269
+	},
+	"C/C++ Header": {
+		"nFiles": 11,
+		"blank": 107,
+		"comment": 278,
+		"code": 312
+	},
+	"XML": {
+		"nFiles": 1,
+		"blank": 29,
+		"comment": 0,
+		"code": 265
+	},
+	"make": {
+		"nFiles": 3,
+		"blank": 69,
+		"comment": 13,
+		"code": 158
+	},
+	"TOML": {
+		"nFiles": 5,
+		"blank": 22,
+		"comment": 5,
+		"code": 85
+	},
+	"SUM": {
+		"blank": 1089,
+		"comment": 1049,
+		"code": 5588,
+		"nFiles": 71
+	}
+}

@@ -1,0 +1,275 @@
+{
+  "verification-results": {
+    "encountered-error": false,
+    "encountered-vir-error": false,
+    "success": true,
+    "verified": 24,
+    "errors": 0,
+    "is-verifying-entire-crate": true
+  },
+  "times-ms": {
+    "verus-build": {
+      "profile": "release",
+      "version": "0.2025.06.14.9b557d7"
+    },
+    "num-threads": 4,
+    "total": 1378,
+    "estimated-cpu-time": 1514,
+    "rust": {
+      "total": 317,
+      "init-and-types": 69,
+      "lifetime": 53,
+      "compile": 193
+    },
+    "verification": {
+      "total": 1048,
+      "vir": {
+        "total": 216,
+        "hir": 30,
+        "import": 99,
+        "rust-to-vir": 18
+      }
+    },
+    "total-verify": 958,
+    "total-verify-module-times": [
+      {
+        "module": "component::seL4_RxFirewall_RxFirewall_app",
+        "time": 806
+      },
+      {
+        "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+        "time": 91
+      },
+      {
+        "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+        "time": 30
+      },
+      {
+        "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+        "time": 30
+      }
+    ],
+    "air": {
+      "total": 145,
+      "module-times": [
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app",
+          "time": 70
+        },
+        {
+          "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+          "time": 39
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+          "time": 18
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+          "time": 16
+        }
+      ]
+    },
+    "smt": {
+      "total": 701,
+      "smt-init": 39,
+      "smt-init-module-times": [
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app",
+          "time": 19
+        },
+        {
+          "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+          "time": 14
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+          "time": 3
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+          "time": 2
+        }
+      ],
+      "smt-run": 662,
+      "smt-run-module-times": [
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app",
+          "time": 651,
+          "rlimit-count": 1663917,
+          "function-breakdown": [
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::timeTriggered",
+              "time": 378,
+              "rlimit-count": 509,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::notify",
+              "time": 0,
+              "rlimit-count": 869247,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::port_allowed",
+              "time": 8,
+              "rlimit-count": 121664,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::NUM_MSGS",
+              "time": 0,
+              "rlimit-count": 7944,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::can_send_packet",
+              "time": 7,
+              "rlimit-count": 7877,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::udp_port_allowed",
+              "time": 2,
+              "rlimit-count": 10672,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::tcp_port_allowed",
+              "time": 2,
+              "rlimit-count": 7902,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::get_frame_packet",
+              "time": 251,
+              "rlimit-count": 91,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::new",
+              "time": 0,
+              "rlimit-count": 22252,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::initialize",
+              "time": 0,
+              "rlimit-count": 615759,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+          "time": 10,
+          "rlimit-count": 77497,
+          "function-breakdown": [
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_EthernetFramesRxOut2",
+              "time": 1,
+              "rlimit-count": 5791,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn2",
+              "time": 0,
+              "rlimit-count": 3684,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn0",
+              "time": 0,
+              "rlimit-count": 5626,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::compute_api",
+              "time": 0,
+              "rlimit-count": 163,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_EthernetFramesRxOut0",
+              "time": 2,
+              "rlimit-count": 3553,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn3",
+              "time": 0,
+              "rlimit-count": 3676,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn1",
+              "time": 0,
+              "rlimit-count": 3784,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_EthernetFramesRxOut1",
+              "time": 1,
+              "rlimit-count": 41970,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_EthernetFramesRxOut3",
+              "time": 1,
+              "rlimit-count": 5644,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::init_api",
+              "time": 0,
+              "rlimit-count": 3606,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+          "time": 0,
+          "rlimit-count": 1371,
+          "function-breakdown": [
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::tcp::ALLOWED_PORTS",
+              "time": 0,
+              "rlimit-count": 1371,
+              "success": true
+            }
+          ]
+        },
+        {
+          "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+          "time": 0,
+          "rlimit-count": 15748,
+          "function-breakdown": [
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::udp::ALLOWED_PORTS",
+              "time": 0,
+              "rlimit-count": 14377,
+              "success": true
+            },
+            {
+              "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::udp::NUM_UDP_PORTS",
+              "time": 0,
+              "rlimit-count": 1371,
+              "success": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "verus": {
+    "profile": "release",
+    "version": "0.2025.06.14.9b557d7",
+    "platform": {
+      "os": "linux",
+      "arch": "x86_64"
+    },
+    "toolchain": "1.85.1-x86_64-unknown-linux-gnu",
+    "commit": "9b557d70faab565829c0642c4d56609a44814d82"
+  }
+}

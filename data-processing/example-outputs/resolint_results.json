@@ -1,0 +1,191 @@
+{
+    "warnings": 0,
+    "errors": 1,
+    "results": [
+        {
+            "rule": "The model must contain at least one process bound to a processor",
+            "status": false,
+            "severity": "error",
+            "file": "platform.aadl",
+            "line": 24
+        },
+        {
+            "rule": "A seL4 process must have at most one thread subcomponent",
+            "status": true
+        },
+        {
+            "rule": "AADL modes are not currently supported by CASE tools",
+            "status": true
+        },
+        {
+            "rule": "AADL flows are not currently supported by CASE tools",
+            "status": true
+        },
+        {
+            "rule": "Thread groups will be ignored for the seL4 target platform",
+            "status": true
+        },
+        {
+            "rule": "Threads should have the Dispatch_Protocol property specified",
+            "status": true
+        },
+        {
+            "rule": "Threads can only specify a dispatch_protocol property of periodic or sporadic",
+            "status": true
+        },
+        {
+            "rule": "Periodic threads must be specified completely",
+            "status": true
+        },
+        {
+            "rule": "Processes containing periodic threads must be specified completely",
+            "status": true
+        },
+        {
+            "rule": "All threads bound to a processor must have same Dispatch_Protocol",
+            "status": true
+        },
+        {
+            "rule": "Integer types must be bounded (cannot use Base_Types::Integer)",
+            "status": true
+        },
+        {
+            "rule": "Float types must be bounded (cannot use Base_Types::Float)",
+            "status": true
+        },
+        {
+            "rule": "Data types should be specified on process, thread, and thread group ports",
+            "status": true
+        },
+        {
+            "rule": "Subcomponent types should be specified",
+            "status": true
+        },
+        {
+            "rule": "Array dimensions must be specified",
+            "status": true
+        },
+        {
+            "rule": "Arrays can only have one dimension",
+            "status": true
+        },
+        {
+            "rule": "The array base type should be specified",
+            "status": true
+        },
+        {
+            "rule": "Enumeration data components must be non-empty",
+            "status": true
+        },
+        {
+            "rule": "Connections between thread components must be uni-directional",
+            "status": true
+        },
+        {
+            "rule": "Ports must be in or out, but not both",
+            "status": true
+        },
+        {
+            "rule": "Multiple incoming connections to a single port are not allowed",
+            "status": true
+        },
+        {
+            "rule": "All ports should be connected",
+            "status": true
+        },
+        {
+            "rule": "Thread CakeML implementations should indicate location of source code or binary",
+            "status": true
+        },
+        {
+            "rule": "All processes must be bound to a processor",
+            "status": true
+        },
+        {
+            "rule": "A processor's subcomponents may be ignored",
+            "status": true
+        },
+        {
+            "rule": "A virtual processor may host at most one process",
+            "status": true
+        },
+        {
+            "rule": "A virtual processor may be bound to at most one processor",
+            "status": true
+        },
+        {
+            "rule": "A virtual processor should not have the Dispatch_Protocol specified",
+            "status": true
+        },
+        {
+            "rule": "The value of a CASE_Scheduling::Domain property set on processes must be greater than or equal to 1",
+            "status": true
+        },
+        {
+            "rule": "CASE_Scheduling::Domain property value assignments must be sequential and non-repeating",
+            "status": true
+        },
+        {
+            "rule": "All thread Compute_Execution_Time property values must be greater than or equal to 2 ms",
+            "status": true
+        },
+        {
+            "rule": "All thread Period property values must be greater than or equal to minimum Compute_Execution_Time",
+            "status": true
+        },
+        {
+            "rule": "All thread Period property values must be divisible by 2 ms",
+            "status": true
+        },
+        {
+            "rule": "All thread Compute_Execution_Time property values must be divisible by 2 ms",
+            "status": true
+        },
+        {
+            "rule": "A bound process should have the Timing_Properties::Frame_Period property set",
+            "status": true
+        },
+        {
+            "rule": "A bound process should have the Timing_Properties::Clock_Period property set",
+            "status": true
+        },
+        {
+            "rule": "The maximum stack size requirements for each thread should be specified using the Memory_Properties::Stack_Size property",
+            "status": true
+        }
+    ],
+    "date": "Sat Jul 19 00:05:08 CDT 2025",
+    "project": "C:\\git\\INSPECTA-models\\open-platform-models\\isolate-ethernet-simple\\aadl",
+    "component": "platform::ZCU102.Impl",
+    "status": "Analysis Completed",
+    "syntaxValidation": {
+        "warnings": 4,
+        "errors": 0,
+        "issues": [
+            {
+                "severity": "warning",
+                "issue": "HAMR in 'with' clause of public package section is not used.",
+                "file": "CASE_Modeling_Guidelines.aadl",
+                "line": 4
+            },
+            {
+                "severity": "warning",
+                "issue": "CASE_Properties in 'with' clause of public package section is not used.",
+                "file": "CASE_Modeling_Guidelines.aadl",
+                "line": 5
+            },
+            {
+                "severity": "warning",
+                "issue": "CASE_Scheduling in 'with' clause of public package section is not used.",
+                "file": "CASE_Modeling_Guidelines.aadl",
+                "line": 6
+            },
+            {
+                "severity": "warning",
+                "issue": "HAMR in 'with' clause of public package section is not used.",
+                "file": "platform.aadl",
+                "line": 5
+            }
+        ]
+    }
+}

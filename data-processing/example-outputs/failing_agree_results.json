@@ -1,0 +1,149 @@
+{
+    "date": "Fri Aug 01 17:50:35 CDT 2025",
+    "project": "C:\\Apps\\osate2_2024-03-master\\runtime-osate2\\toy_example",
+    "component": "Integer_Toy::top_level.Impl",
+    "status": "Counterexamples Found",
+    "syntaxValidation": {
+        "warnings": 0,
+        "errors": 0
+    },
+    "results": {
+        "children": [
+            {
+                "children": [
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "A_sub assume: [a_input] A input range"
+                            },
+                            {
+                                "status": "VALID",
+                                "name": "B_sub assume: [b_input] B input range"
+                            },
+                            {
+                                "status": "VALID",
+                                "name": "Subcomponent Assumptions"
+                            },
+                            {
+                                "status": "VALID",
+                                "name": "[top_level_output1] mode is always positive"
+                            },
+                            {
+                                "status": "INVALID",
+                                "name": "[top_level_output2] System output range"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 4,
+                                "Invalid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Contract Guarantees"
+                    },
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "This component consistent"
+                    },
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "A_sub consistent"
+                    },
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "B_sub consistent"
+                    },
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "C_sub consistent"
+                    },
+                    {
+                        "propertyResults": [
+                            {
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Component composition consistent"
+                    }
+                ],
+                "multiStatus": {
+                    "map": {
+                        "Working": 0,
+                        "Valid": 9,
+                        "Invalid": 1,
+                        "Waiting": 0
+                    }
+                },
+                "name": "Verification for top_level.Impl"
+            }
+        ],
+        "multiStatus": {
+            "map": {
+                "Working": 0,
+                "Valid": 9,
+                "Invalid": 1,
+                "Waiting": 0
+            }
+        },
+        "name": ""
+    }
+}

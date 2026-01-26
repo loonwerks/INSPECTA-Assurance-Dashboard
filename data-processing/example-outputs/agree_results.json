@@ -1,0 +1,1104 @@
+{
+    "date": "Tue Aug 05 22:53:59 CDT 2025",
+    "project": "AGREE-Toy-Example",
+    "component": "Integer_Toy::top_level.Impl",
+    "status": "Counterexamples Found",
+    "syntaxValidation": {
+        "warnings": 0,
+        "errors": 0,
+        "issues": [
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 13
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 14
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 24
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 25
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 36
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 45
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 46
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 68
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Integer_Toy_Extended.aadl",
+                "line": 69
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 12
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 13
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 23
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 24
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 35
+            },
+            {
+                "issue": "It is recommended that assume statements be named. (Hint: an identifier may be placed between the \"assume\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 44
+            },
+            {
+                "issue": "It is recommended that guarantee statements be named. (Hint: an identifier may be placed between the \"guarantee\" keyword and the quoted description.)",
+                "file": "/AGREE-Toy-Example/packages/Real_Toy.aadl",
+                "line": 45
+            }
+        ]
+    },
+    "results": {
+        "children": [
+            {
+                "children": [
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 5 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [A_sub____ASSUME0, B_sub____ASSUME0, __ASSUME__HIST, __GUARANTEE0, __GUARANTEE1]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nVALID PROPERTIES: [A_sub____ASSUME0, B_sub____ASSUME0, __ASSUME__HIST, __GUARANTEE0]\r\n\r\nINVALID PROPERTIES: [__GUARANTEE1]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 0,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "A_sub assume: [A1] A input range",
+                                    "runtime": 0.236
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 2,
+                                "status": "VALID",
+                                "name": "A_sub assume: [A1] A input range"
+                            },
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 1,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "B_sub assume: [B1] B input range",
+                                    "runtime": 0.236
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 3,
+                                "status": "VALID",
+                                "name": "B_sub assume: [B1] B input range"
+                            },
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 1,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "Subcomponent Assumptions",
+                                    "runtime": 0.236
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 3,
+                                "status": "VALID",
+                                "name": "Subcomponent Assumptions"
+                            },
+                            {
+                                "property": {
+                                    "source": "k-induction",
+                                    "k": 1,
+                                    "invariants": [],
+                                    "ivc": [],
+                                    "ivcSets": [
+                                        []
+                                    ],
+                                    "invarantSets": [
+                                        []
+                                    ],
+                                    "mivcTimedOut": false,
+                                    "name": "[T2] mode is always positive",
+                                    "runtime": 0.236
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 3,
+                                "status": "VALID",
+                                "name": "[T2] mode is always positive"
+                            },
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 1,
+                                        "signals": {
+                                            "C_sub..ASSUME.HIST": {
+                                                "name": "C_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Output": {
+                                                "name": "C_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "A_sub assume: [A1] A input range": {
+                                                "name": "A_sub assume: [A1] A input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.B_sub..ASSUME.HIST": {
+                                                "name": "_TOP.B_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub assume: [B1] B input range": {
+                                                "name": "B_sub assume: [B1] B input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Input": {
+                                                "name": "B_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -7
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Output": {
+                                                "name": "A_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -7
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Input": {
+                                                "name": "A_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -3
+                                                    }
+                                                }
+                                            },
+                                            "B_sub..ASSUME.HIST": {
+                                                "name": "B_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.A_sub..ASSUME.HIST": {
+                                                "name": "_TOP.A_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "mode": {
+                                                "name": "mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 1
+                                                    }
+                                                }
+                                            },
+                                            "Input": {
+                                                "name": "Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -3
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input2": {
+                                                "name": "C_sub.Input2",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 7
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input1": {
+                                                "name": "C_sub.Input1",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -7
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.C_sub..ASSUME.HIST": {
+                                                "name": "_TOP.C_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Output": {
+                                                "name": "Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.mode": {
+                                                "name": "C_sub.mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 1
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Output": {
+                                                "name": "B_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 7
+                                                    }
+                                                }
+                                            },
+                                            "A_sub..ASSUME.HIST": {
+                                                "name": "A_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "[T3] System output range": {
+                                                "name": "[T3] System output range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "[T3] System output range",
+                                    "runtime": 0.224
+                                },
+                                "invertStatus": false,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 0,
+                                "status": "INVALID",
+                                "name": "[T3] System output range"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 4,
+                                "Invalid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Contract Guarantees"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "mode": {
+                                                "name": "mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Input": {
+                                                "name": "Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Output": {
+                                                "name": "Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -1
+                                                    },
+                                                    "1": {
+                                                        "value": -1
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.107
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "This component consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "A_sub assume: [A1] A input range": {
+                                                "name": "A_sub assume: [A1] A input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Output": {
+                                                "name": "A_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -1
+                                                    },
+                                                    "1": {
+                                                        "value": -1
+                                                    }
+                                                }
+                                            },
+                                            "[A2] A output range": {
+                                                "name": "[A2] A output range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Input": {
+                                                "name": "A_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.109
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "A_sub consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "B_sub assume: [B1] B input range": {
+                                                "name": "B_sub assume: [B1] B input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Input": {
+                                                "name": "B_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "[B2] B output range": {
+                                                "name": "[B2] B output range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Output": {
+                                                "name": "B_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.107
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "B_sub consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nINVALID PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "source": "bmc",
+                                    "cex": {
+                                        "length": 2,
+                                        "signals": {
+                                            "C_sub.Output": {
+                                                "name": "C_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input2": {
+                                                "name": "C_sub.Input2",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input1": {
+                                                "name": "C_sub.Input1",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.mode": {
+                                                "name": "C_sub.mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 0
+                                                    },
+                                                    "1": {
+                                                        "value": 1
+                                                    }
+                                                }
+                                            },
+                                            "[C1] mode always is increasing": {
+                                                "name": "[C1] mode always is increasing",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "[C2] C output range": {
+                                                "name": "[C2] C output range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "conflicts": [],
+                                    "name": "Result",
+                                    "runtime": 0.106
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 1,
+                                "status": "VALID",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Valid": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "C_sub consistent"
+                    },
+                    {
+                        "text": "Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=proxy.rockwellcollins.com -Dhttp.proxyPort=9090 -Dhttps.proxyHost=proxy.rockwellcollins.com -Dhttps.proxyPort=9090\n==========================================\r\n  JKind 4.5.0\r\n==========================================\r\n\r\nThere are 1 properties to be checked.\r\nPROPERTIES TO BE CHECKED: [__PROP]\r\n\r\n    -------------------------------------\r\n    --^^--        SUMMARY          --^^--\r\n    -------------------------------------\r\n\r\nUNKNOWN PROPERTIES: [__PROP]\r\n\r\n",
+                        "propertyResults": [
+                            {
+                                "property": {
+                                    "trueFor": 2,
+                                    "cex": {
+                                        "length": 3,
+                                        "signals": {
+                                            "C_sub..ASSUME.HIST": {
+                                                "name": "C_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    },
+                                                    "2": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Output": {
+                                                "name": "C_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -2
+                                                    },
+                                                    "1": {
+                                                        "value": -3
+                                                    },
+                                                    "2": {
+                                                        "value": -1
+                                                    }
+                                                }
+                                            },
+                                            "A_sub assume: [A1] A input range": {
+                                                "name": "A_sub assume: [A1] A input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    },
+                                                    "2": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.B_sub..ASSUME.HIST": {
+                                                "name": "_TOP.B_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    },
+                                                    "2": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub assume: [B1] B input range": {
+                                                "name": "B_sub assume: [B1] B input range",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    },
+                                                    "2": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Input": {
+                                                "name": "B_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 19
+                                                    },
+                                                    "1": {
+                                                        "value": 17
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Output": {
+                                                "name": "A_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 19
+                                                    },
+                                                    "1": {
+                                                        "value": 17
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "A_sub.Input": {
+                                                "name": "A_sub.Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 9
+                                                    },
+                                                    "1": {
+                                                        "value": 9
+                                                    },
+                                                    "2": {
+                                                        "value": 9
+                                                    }
+                                                }
+                                            },
+                                            "B_sub..ASSUME.HIST": {
+                                                "name": "B_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    },
+                                                    "2": {
+                                                        "value": true
+                                                    }
+                                                }
+                                            },
+                                            "Result": {
+                                                "name": "Result",
+                                                "values": {
+                                                    "0": {
+                                                        "value": true
+                                                    },
+                                                    "1": {
+                                                        "value": true
+                                                    },
+                                                    "2": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.A_sub..ASSUME.HIST": {
+                                                "name": "_TOP.A_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    },
+                                                    "2": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "mode": {
+                                                "name": "mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 4
+                                                    },
+                                                    "1": {
+                                                        "value": 5
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "Input": {
+                                                "name": "Input",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 9
+                                                    },
+                                                    "1": {
+                                                        "value": 9
+                                                    },
+                                                    "2": {
+                                                        "value": 9
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input2": {
+                                                "name": "C_sub.Input2",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -19
+                                                    },
+                                                    "1": {
+                                                        "value": -17
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.Input1": {
+                                                "name": "C_sub.Input1",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 19
+                                                    },
+                                                    "1": {
+                                                        "value": 17
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "_TOP.C_sub..ASSUME.HIST": {
+                                                "name": "_TOP.C_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    },
+                                                    "2": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            },
+                                            "Output": {
+                                                "name": "Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -2
+                                                    },
+                                                    "1": {
+                                                        "value": -3
+                                                    },
+                                                    "2": {
+                                                        "value": -1
+                                                    }
+                                                }
+                                            },
+                                            "C_sub.mode": {
+                                                "name": "C_sub.mode",
+                                                "values": {
+                                                    "0": {
+                                                        "value": 4
+                                                    },
+                                                    "1": {
+                                                        "value": 5
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "B_sub.Output": {
+                                                "name": "B_sub.Output",
+                                                "values": {
+                                                    "0": {
+                                                        "value": -19
+                                                    },
+                                                    "1": {
+                                                        "value": -17
+                                                    },
+                                                    "2": {
+                                                        "value": 0
+                                                    }
+                                                }
+                                            },
+                                            "time": {
+                                                "name": "time",
+                                                "values": {
+                                                    "0": {
+                                                        "value": {
+                                                            "num": 0,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "1": {
+                                                        "value": {
+                                                            "num": 1,
+                                                            "denom": 1
+                                                        }
+                                                    },
+                                                    "2": {
+                                                        "value": {
+                                                            "num": 2,
+                                                            "denom": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "A_sub..ASSUME.HIST": {
+                                                "name": "A_sub..ASSUME.HIST",
+                                                "values": {
+                                                    "0": {
+                                                        "value": false
+                                                    },
+                                                    "1": {
+                                                        "value": false
+                                                    },
+                                                    "2": {
+                                                        "value": false
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "functionTables": []
+                                    },
+                                    "name": "Result",
+                                    "runtime": 0.255
+                                },
+                                "invertStatus": true,
+                                "invalidInPast": false,
+                                "elapsed": 0,
+                                "baseProgress": 2,
+                                "status": "UNKNOWN",
+                                "name": "Result"
+                            }
+                        ],
+                        "multiStatus": {
+                            "map": {
+                                "Working": 0,
+                                "Unknown": 1,
+                                "Waiting": 0
+                            }
+                        },
+                        "name": "Component composition consistent"
+                    }
+                ],
+                "multiStatus": {
+                    "map": {
+                        "Working": 0,
+                        "Valid": 8,
+                        "Invalid": 1,
+                        "Unknown": 1,
+                        "Waiting": 0
+                    }
+                },
+                "name": "Verification for top_level.Impl"
+            }
+        ],
+        "multiStatus": {
+            "map": {
+                "Working": 0,
+                "Valid": 8,
+                "Invalid": 1,
+                "Unknown": 1,
+                "Waiting": 0
+            }
+        },
+        "name": ""
+    }
+}
