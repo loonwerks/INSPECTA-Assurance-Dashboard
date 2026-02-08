@@ -1,0 +1,342 @@
+{
+    "results": [
+        {
+            "claim": "component_contracts_satisfied()",
+            "status": true,
+            "subclaims": [
+                {
+                    "claim": "Component Contracts are satisfied",
+                    "status": true,
+                    "subclaims": [
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::operator_interface::oip::oit contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWStatus_Ranges verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::mt::ma::ma contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract REQ_MA_1 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MA_1 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MA_1 verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MA_1 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MA_1 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MA_1 verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Figure_A_7 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Figure_A_7 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Figure_A_7 verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_LowerAlarmTemp was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_LowerAlarmTemp not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_LowerAlarmTemp verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_UpperAlarmTemp was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_UpperAlarmTemp not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Table_A_12_UpperAlarmTemp verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::mt::mmi::mmi contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract monitorStatusInitiallyInit was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract monitorStatusInitiallyInit not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract monitorStatusInitiallyInit verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract Allowed_AlarmTempWstatus_Ranges verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::mt::mmm::mmm contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract REQ_MMM_1 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MMM_1 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MMM_1 verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::rt::mhs::mhs contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract initlastCmd was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract initlastCmd not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract initlastCmd verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract initlastCmd was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract initlastCmd not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract initlastCmd verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MHS_1 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MHS_1 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MHS_1 verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_lower_temp was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_lower_temp not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_lower_temp verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lastCmd verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::rt::mri::mri contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract RegulatorStatusIsInitiallyInit was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract RegulatorStatusIsInitiallyInit not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract RegulatorStatusIsInitiallyInit verified",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_not_higher_than_upper was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_not_higher_than_upper not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract lower_is_not_higher_than_upper verified",
+                                    "status": true
+                                }
+                            ]
+                        },
+                        {
+                            "claim": "Isolette_Single_Sensor_Instance::thermostat::rt::mrm::mrm contracts satisfied",
+                            "status": true,
+                            "subclaims": [
+                                {
+                                    "claim": "Software contract REQ_MRM_1 was generated",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MRM_1 not altered",
+                                    "status": true
+                                },
+                                {
+                                    "claim": "Software contract REQ_MRM_1 verified",
+                                    "status": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "date": "Thu Feb 05 21:39:41 CST 2026",
+    "project": "C:\\Apps\\osate2_2024-03-master\\runtime-osate2\\INSPECTA-demo\\system\\assurance",
+    "component": "ardupilot_assurance::ArduPilot.i",
+    "status": "Analysis Completed",
+    "syntaxValidation": {
+        "warnings": 0,
+        "errors": 0
+    }
+}
