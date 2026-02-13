@@ -56,7 +56,7 @@
     "id" : "integrationStructArray_EventDataPort",
     "descriptor" : {
       "type" : "None",
-      "value": "Contract Description BBB to be placed here"
+      "value" : "Example of optional descriptor on the producer side\n                    of an integration constraint v2"
     },
     "position" : {
       "type" : "Position",
