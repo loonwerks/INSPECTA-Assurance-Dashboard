@@ -1,10 +1,10 @@
 [
   {
     "Component": "rx_firewall",
-    "Coverage Report": "https://htmlpreview.github.io/?..."
+    "Coverage Report": "https://htmlpreview.github.io/?https://github.com/loonwerks/INSPECTA-Assurance-Dashboard/blob/main/data-processing/example-outputs/rx_firewall_index.html"
   },
   {
     "Component": "firewall_core",
-    "Coverage Report": "https://htmlpreview.github.io/?..."
+    "Coverage Report": "https://htmlpreview.github.io/?https://github.com/loonwerks/INSPECTA-Assurance-Dashboard/blob/main/data-processing/example-outputs/firewall_core_index.html"
   }
 ]
