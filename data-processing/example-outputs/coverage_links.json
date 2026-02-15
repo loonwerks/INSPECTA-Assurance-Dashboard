@@ -1,0 +1,10 @@
+[
+  {
+    "Component": "rx_firewall",
+    "Coverage Report": "https://htmlpreview.github.io/?..."
+  },
+  {
+    "Component": "firewall_core",
+    "Coverage Report": "https://htmlpreview.github.io/?..."
+  }
+]
