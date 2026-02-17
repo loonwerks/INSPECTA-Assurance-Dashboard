@@ -1,0 +1,1093 @@
+{
+  "component-verifications": {
+    "seL4_RxFirewall_RxFirewall": {
+      "verification-results": {
+        "encountered-error": false,
+        "encountered-vir-error": false,
+        "success": true,
+        "verified": 36,
+        "errors": 0,
+        "is-verifying-entire-crate": true
+      },
+      "times-ms": {
+        "verus-build": {
+          "profile": "release",
+          "version": "0.2026.01.30.44ebdee"
+        },
+        "num-threads": 3,
+        "total": 2780,
+        "estimated-cpu-time": 3009,
+        "rust": {
+          "total": 249,
+          "init-and-types": 99,
+          "trait-conflicts": 33,
+          "compile": 116
+        },
+        "verification": {
+          "total": 2504,
+          "vir": {
+            "total": 315,
+            "hir": 42,
+            "import": 183,
+            "rust-to-vir": 38
+          }
+        },
+        "total-verify": 2401,
+        "total-verify-module-times": [
+          {
+            "module": "component::seL4_RxFirewall_RxFirewall_app",
+            "time": 2159
+          },
+          {
+            "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+            "time": 166
+          },
+          {
+            "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+            "time": 38
+          },
+          {
+            "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+            "time": 36
+          }
+        ],
+        "air": {
+          "total": 250,
+          "module-times": [
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app",
+              "time": 111
+            },
+            {
+              "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+              "time": 88
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+              "time": 26
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+              "time": 24
+            }
+          ]
+        },
+        "smt": {
+          "total": 1996,
+          "smt-init": 2,
+          "rlimit-init": 7032,
+          "smt-init-module-times": [
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app",
+              "time": 1,
+              "time-micros": 1203,
+              "rlimit": 3150
+            },
+            {
+              "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+              "time": 0,
+              "time-micros": 994,
+              "rlimit": 3864
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+              "time": 0,
+              "time-micros": 165,
+              "rlimit": 12
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+              "time": 0,
+              "time-micros": 84,
+              "rlimit": 6
+            }
+          ],
+          "smt-run": 1994,
+          "rlimit-run": 4771622,
+          "smt-run-module-times": [
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app",
+              "time": 1961,
+              "time-micros": 1961949,
+              "rlimit": 4650299,
+              "function-breakdown": [
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::MAV_UDP_SRC_PORT",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 81,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::udp_port_allowed",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2713,
+                  "rlimit": 9321,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::udp_headers_from_raw_eth",
+                  "mode:": "exec",
+                  "time": 17,
+                  "time-micros": 17246,
+                  "rlimit": 59390,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::udp_frame_from_raw_eth",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3416,
+                  "rlimit": 11644,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::get_frame_packet",
+                  "mode:": "exec",
+                  "time": 216,
+                  "time-micros": 216040,
+                  "rlimit": 527871,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::tcp_port_allowed",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2643,
+                  "rlimit": 9183,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::can_send_to_vmm",
+                  "mode:": "exec",
+                  "time": 5,
+                  "time-micros": 5928,
+                  "rlimit": 17742,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::udp_payload_from_raw_eth",
+                  "mode:": "exec",
+                  "time": 16,
+                  "time-micros": 16527,
+                  "rlimit": 80272,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::initialize",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 78,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::timeTriggered",
+                  "mode:": "exec",
+                  "time": 1682,
+                  "time-micros": 1682816,
+                  "rlimit": 3884159,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::NUM_MSGS",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 90,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::notify",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 82,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::can_send_to_mavlink",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3558,
+                  "rlimit": 11457,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::MAV_UDP_DST_PORT",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 79,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::port_allowed",
+                  "mode:": "exec",
+                  "time": 10,
+                  "time-micros": 10572,
+                  "rlimit": 39248,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::seL4_RxFirewall_RxFirewall::new",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 73,
+                  "rlimit": 2,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "bridge::seL4_RxFirewall_RxFirewall_api",
+              "time": 32,
+              "time-micros": 32307,
+              "rlimit": 121317,
+              "function-breakdown": [
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_MavlinkOut1",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2359,
+                  "rlimit": 10454,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_VmmOut0",
+                  "mode:": "exec",
+                  "time": 5,
+                  "time-micros": 5297,
+                  "rlimit": 11971,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn0",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3113,
+                  "rlimit": 9436,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_MavlinkOut3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2426,
+                  "rlimit": 10428,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn3",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1954,
+                  "rlimit": 8922,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_VmmOut1",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2746,
+                  "rlimit": 10471,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_VmmOut2",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2642,
+                  "rlimit": 10419,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::init_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 87,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::compute_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 87,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_MavlinkOut2",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2932,
+                  "rlimit": 10441,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_VmmOut3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2363,
+                  "rlimit": 10419,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn2",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1893,
+                  "rlimit": 8922,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::get_EthernetFramesRxIn1",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1935,
+                  "rlimit": 8940,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::bridge::seL4_RxFirewall_RxFirewall_api::seL4_RxFirewall_RxFirewall_Application_Api::put_MavlinkOut0",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2466,
+                  "rlimit": 10490,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::udp",
+              "time": 0,
+              "time-micros": 198,
+              "rlimit": 4,
+              "function-breakdown": [
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::udp::NUM_UDP_PORTS",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 98,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::udp::ALLOWED_PORTS",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 99,
+                  "rlimit": 2,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "component::seL4_RxFirewall_RxFirewall_app::config::tcp",
+              "time": 0,
+              "time-micros": 103,
+              "rlimit": 2,
+              "function-breakdown": [
+                {
+                  "function": "seL4_RxFirewall_RxFirewall::component::seL4_RxFirewall_RxFirewall_app::config::tcp::ALLOWED_PORTS",
+                  "mode:": "spec",
+                  "time": 0,
+                  "time-micros": 103,
+                  "rlimit": 2,
+                  "success": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "verus": {
+        "profile": "release",
+        "version": "0.2026.01.30.44ebdee",
+        "platform": {
+          "os": "linux",
+          "arch": "x86_64"
+        },
+        "toolchain": "1.93.0-x86_64-unknown-linux-gnu",
+        "commit": "44ebdeefeca3b2f981298fe1f353bf422ea66b24"
+      }
+    },
+    "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver": {
+      "verification-results": {
+        "encountered-error": false,
+        "encountered-vir-error": false,
+        "success": true,
+        "verified": 10,
+        "errors": 0,
+        "is-verifying-entire-crate": true
+      },
+      "times-ms": {
+        "verus-build": {
+          "profile": "release",
+          "version": "0.2026.01.30.44ebdee"
+        },
+        "num-threads": 2,
+        "total": 489,
+        "estimated-cpu-time": 508,
+        "rust": {
+          "total": 68,
+          "init-and-types": 68,
+          "trait-conflicts": 0,
+          "compile": 0
+        },
+        "verification": {
+          "total": 408,
+          "vir": {
+            "total": 281,
+            "hir": 37,
+            "import": 182,
+            "rust-to-vir": 30
+          }
+        },
+        "total-verify": 139,
+        "total-verify-module-times": [
+          {
+            "module": "bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api",
+            "time": 113
+          },
+          {
+            "module": "component::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_app",
+            "time": 26
+          }
+        ],
+        "air": {
+          "total": 68,
+          "module-times": [
+            {
+              "module": "bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api",
+              "time": 62
+            },
+            {
+              "module": "component::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_app",
+              "time": 6
+            }
+          ]
+        },
+        "smt": {
+          "total": 17,
+          "smt-init": 0,
+          "rlimit-init": 2058,
+          "smt-init-module-times": [
+            {
+              "module": "bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api",
+              "time": 0,
+              "time-micros": 616,
+              "rlimit": 2058
+            },
+            {
+              "module": "component::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_app",
+              "time": 0,
+              "time-micros": 0,
+              "rlimit": 0
+            }
+          ],
+          "smt-run": 17,
+          "rlimit-run": 69974,
+          "smt-run-module-times": [
+            {
+              "module": "bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api",
+              "time": 17,
+              "time-micros": 17749,
+              "rlimit": 69974,
+              "function-breakdown": [
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::put_EthernetFramesRx2",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2364,
+                  "rlimit": 9559,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::put_EthernetFramesRx0",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3629,
+                  "rlimit": 11133,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::get_EthernetFramesTx2",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1679,
+                  "rlimit": 7402,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::init_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 76,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::compute_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 74,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::get_EthernetFramesTx1",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1693,
+                  "rlimit": 7434,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::put_EthernetFramesRx3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2352,
+                  "rlimit": 9559,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::get_EthernetFramesTx0",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1829,
+                  "rlimit": 7868,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::put_EthernetFramesRx1",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2370,
+                  "rlimit": 9613,
+                  "success": true
+                },
+                {
+                  "function": "seL4_LowLevelEthernetDriver_LowLevelEthernetDriver::bridge::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_api::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_Application_Api::get_EthernetFramesTx3",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1677,
+                  "rlimit": 7402,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "component::seL4_LowLevelEthernetDriver_LowLevelEthernetDriver_app",
+              "time": 0,
+              "time-micros": 0,
+              "rlimit": 0,
+              "function-breakdown": []
+            }
+          ]
+        }
+      },
+      "verus": {
+        "profile": "release",
+        "version": "0.2026.01.30.44ebdee",
+        "platform": {
+          "os": "linux",
+          "arch": "x86_64"
+        },
+        "toolchain": "1.93.0-x86_64-unknown-linux-gnu",
+        "commit": "44ebdeefeca3b2f981298fe1f353bf422ea66b24"
+      }
+    },
+    "seL4_TxFirewall_TxFirewall": {
+      "verification-results": {
+        "encountered-error": false,
+        "encountered-vir-error": false,
+        "success": true,
+        "verified": 16,
+        "errors": 0,
+        "is-verifying-entire-crate": true
+      },
+      "times-ms": {
+        "verus-build": {
+          "profile": "release",
+          "version": "0.2026.01.30.44ebdee"
+        },
+        "num-threads": 2,
+        "total": 1091,
+        "estimated-cpu-time": 1205,
+        "rust": {
+          "total": 173,
+          "init-and-types": 60,
+          "trait-conflicts": 33,
+          "compile": 79
+        },
+        "verification": {
+          "total": 901,
+          "vir": {
+            "total": 280,
+            "hir": 28,
+            "import": 185,
+            "rust-to-vir": 28
+          }
+        },
+        "total-verify": 724,
+        "total-verify-module-times": [
+          {
+            "module": "component::seL4_TxFirewall_TxFirewall_app",
+            "time": 603
+          },
+          {
+            "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+            "time": 120
+          }
+        ],
+        "air": {
+          "total": 153,
+          "module-times": [
+            {
+              "module": "component::seL4_TxFirewall_TxFirewall_app",
+              "time": 87
+            },
+            {
+              "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+              "time": 66
+            }
+          ]
+        },
+        "smt": {
+          "total": 490,
+          "smt-init": 1,
+          "rlimit-init": 3345,
+          "smt-init-module-times": [
+            {
+              "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+              "time": 0,
+              "time-micros": 680,
+              "rlimit": 1938
+            },
+            {
+              "module": "component::seL4_TxFirewall_TxFirewall_app",
+              "time": 0,
+              "time-micros": 375,
+              "rlimit": 1407
+            }
+          ],
+          "smt-run": 489,
+          "rlimit-run": 1239264,
+          "smt-run-module-times": [
+            {
+              "module": "component::seL4_TxFirewall_TxFirewall_app",
+              "time": 466,
+              "time-micros": 466555,
+              "rlimit": 1172203,
+              "function-breakdown": [
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::can_send_packet",
+                  "mode:": "exec",
+                  "time": 6,
+                  "time-micros": 6887,
+                  "rlimit": 12313,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::get_frame_packet",
+                  "mode:": "exec",
+                  "time": 196,
+                  "time-micros": 196927,
+                  "rlimit": 489744,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::new",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 71,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::initialize",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 79,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::timeTriggered",
+                  "mode:": "exec",
+                  "time": 262,
+                  "time-micros": 262507,
+                  "rlimit": 670140,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::component::seL4_TxFirewall_TxFirewall_app::seL4_TxFirewall_TxFirewall::notify",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 81,
+                  "rlimit": 2,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "bridge::seL4_TxFirewall_TxFirewall_api",
+              "time": 23,
+              "time-micros": 23148,
+              "rlimit": 67061,
+              "function-breakdown": [
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut1",
+                  "mode:": "exec",
+                  "time": 4,
+                  "time-micros": 4054,
+                  "rlimit": 10121,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2372,
+                  "rlimit": 6203,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn0",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1409,
+                  "rlimit": 6475,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::compute_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 84,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut2",
+                  "mode:": "exec",
+                  "time": 4,
+                  "time-micros": 4035,
+                  "rlimit": 10062,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn2",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1385,
+                  "rlimit": 6203,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut0",
+                  "mode:": "exec",
+                  "time": 5,
+                  "time-micros": 5762,
+                  "rlimit": 11729,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::put_EthernetFramesTxOut3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2573,
+                  "rlimit": 10049,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::seL4_TxFirewall_TxFirewall_Application_Api::get_EthernetFramesTxIn1",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1370,
+                  "rlimit": 6215,
+                  "success": true
+                },
+                {
+                  "function": "seL4_TxFirewall_TxFirewall::bridge::seL4_TxFirewall_TxFirewall_api::init_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 99,
+                  "rlimit": 2,
+                  "success": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "verus": {
+        "profile": "release",
+        "version": "0.2026.01.30.44ebdee",
+        "platform": {
+          "os": "linux",
+          "arch": "x86_64"
+        },
+        "toolchain": "1.93.0-x86_64-unknown-linux-gnu",
+        "commit": "44ebdeefeca3b2f981298fe1f353bf422ea66b24"
+      }
+    },
+    "seL4_MavlinkFirewall_MavlinkFirewall": {
+      "verification-results": {
+        "encountered-error": false,
+        "encountered-vir-error": false,
+        "success": true,
+        "verified": 19,
+        "errors": 0,
+        "is-verifying-entire-crate": true
+      },
+      "times-ms": {
+        "verus-build": {
+          "profile": "release",
+          "version": "0.2026.01.30.44ebdee"
+        },
+        "num-threads": 2,
+        "total": 592,
+        "estimated-cpu-time": 672,
+        "rust": {
+          "total": 148,
+          "init-and-types": 48,
+          "trait-conflicts": 32,
+          "compile": 67
+        },
+        "verification": {
+          "total": 428,
+          "vir": {
+            "total": 264,
+            "hir": 26,
+            "import": 184,
+            "rust-to-vir": 24
+          }
+        },
+        "total-verify": 235,
+        "total-verify-module-times": [
+          {
+            "module": "component::seL4_MavlinkFirewall_MavlinkFirewall_app",
+            "time": 149
+          },
+          {
+            "module": "bridge::seL4_MavlinkFirewall_MavlinkFirewall_api",
+            "time": 86
+          }
+        ],
+        "air": {
+          "total": 110,
+          "module-times": [
+            {
+              "module": "component::seL4_MavlinkFirewall_MavlinkFirewall_app",
+              "time": 60
+            },
+            {
+              "module": "bridge::seL4_MavlinkFirewall_MavlinkFirewall_api",
+              "time": 49
+            }
+          ]
+        },
+        "smt": {
+          "total": 70,
+          "smt-init": 1,
+          "rlimit-init": 3491,
+          "smt-init-module-times": [
+            {
+              "module": "bridge::seL4_MavlinkFirewall_MavlinkFirewall_api",
+              "time": 0,
+              "time-micros": 690,
+              "rlimit": 1854
+            },
+            {
+              "module": "component::seL4_MavlinkFirewall_MavlinkFirewall_app",
+              "time": 0,
+              "time-micros": 520,
+              "rlimit": 1637
+            }
+          ],
+          "smt-run": 69,
+          "rlimit-run": 255754,
+          "smt-run-module-times": [
+            {
+              "module": "component::seL4_MavlinkFirewall_MavlinkFirewall_app",
+              "time": 55,
+              "time-micros": 55226,
+              "rlimit": 208209,
+              "function-breakdown": [
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::seL4_MavlinkFirewall_MavlinkFirewall::notify",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 77,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::two_bytes_to_u16_exec",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1331,
+                  "rlimit": 5160,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::raw_eth_from_udp_frame",
+                  "mode:": "exec",
+                  "time": 16,
+                  "time-micros": 16979,
+                  "rlimit": 76656,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::seL4_MavlinkFirewall_MavlinkFirewall::new",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 80,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::seL4_MavlinkFirewall_MavlinkFirewall::initialize",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 79,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::three_bytes_to_u32_exec",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3304,
+                  "rlimit": 31097,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::can_send",
+                  "mode:": "exec",
+                  "time": 14,
+                  "time-micros": 14109,
+                  "rlimit": 41548,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::component::seL4_MavlinkFirewall_MavlinkFirewall_app::seL4_MavlinkFirewall_MavlinkFirewall::timeTriggered",
+                  "mode:": "exec",
+                  "time": 19,
+                  "time-micros": 19263,
+                  "rlimit": 53742,
+                  "success": true
+                }
+              ]
+            },
+            {
+              "module": "bridge::seL4_MavlinkFirewall_MavlinkFirewall_api",
+              "time": 14,
+              "time-micros": 14454,
+              "rlimit": 47545,
+              "function-breakdown": [
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::get_In3",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1169,
+                  "rlimit": 5083,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::init_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 95,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::put_Out2",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1560,
+                  "rlimit": 6472,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::get_In2",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1212,
+                  "rlimit": 5083,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::put_Out0",
+                  "mode:": "exec",
+                  "time": 3,
+                  "time-micros": 3433,
+                  "rlimit": 7463,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::get_In0",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1832,
+                  "rlimit": 5355,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::get_In1",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1158,
+                  "rlimit": 5095,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::compute_api",
+                  "mode:": "exec",
+                  "time": 0,
+                  "time-micros": 80,
+                  "rlimit": 2,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::put_Out1",
+                  "mode:": "exec",
+                  "time": 1,
+                  "time-micros": 1593,
+                  "rlimit": 6531,
+                  "success": true
+                },
+                {
+                  "function": "seL4_MavlinkFirewall_MavlinkFirewall::bridge::seL4_MavlinkFirewall_MavlinkFirewall_api::seL4_MavlinkFirewall_MavlinkFirewall_Application_Api::put_Out3",
+                  "mode:": "exec",
+                  "time": 2,
+                  "time-micros": 2318,
+                  "rlimit": 6459,
+                  "success": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "verus": {
+        "profile": "release",
+        "version": "0.2026.01.30.44ebdee",
+        "platform": {
+          "os": "linux",
+          "arch": "x86_64"
+        },
+        "toolchain": "1.93.0-x86_64-unknown-linux-gnu",
+        "commit": "44ebdeefeca3b2f981298fe1f353bf422ea66b24"
+      }
+    }
+  },
+  "timestamp": "Tue Feb 17 12:09:38 UTC 2026",
+  "exitcode": "0"
+}
